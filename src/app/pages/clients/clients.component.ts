@@ -7,7 +7,7 @@ import { ContactComponent } from '../../components/global/contact/contact.compon
   imports:[ContactComponent],
   template:`
   <section class="page-hero"><div class="container"><span class="eyebrow">Our clients</span><h1>Real businesses.<br><span>Real digital work.</span></h1><p>A look at projects we've designed and developed.</p></div></section>
-  <section class="section client"><div class="container"><div class="case"><div class="copy"><span class="eyebrow">Featured project</span><h2>Supa Rain<br>Waterproofing</h2><p>A focused website experience for a Centurion waterproofing business, built to clearly communicate services and drive enquiries.</p><a class="btn btn-primary" href="https://www.suparainwaterproofing.co.za" target="_blank" rel="noopener">Visit Live Website ↗</a></div><img src="assets/images/supa-rain-home.png" alt="Supa Rain Waterproofing website"></div></div></section>
+  <section class="section client"><div class="container"><div class="case"><div class="copy"><span class="eyebrow">Featured project</span><h2>Supa Rain<br>Waterproofing</h2><p>A focused website experience for a Centurion waterproofing business, built to clearly communicate services and drive enquiries.</p><a class="btn btn-primary" href="https://www.suparainwaterproofing.co.za" target="_blank" rel="noopener">Visit Live Website </a></div><img src="assets/images/supa-rain-home.png" alt="Supa Rain Waterproofing website"></div></div></section>
   <app-contact-cta />
   `,
   styles:[`

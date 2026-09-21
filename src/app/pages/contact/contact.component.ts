@@ -81,7 +81,7 @@ import { FormsModule } from '@angular/forms';
             class="btn btn-whatsapp"
             type="submit">
             Send via WhatsApp
-            <span>↗</span>
+            <span></span>
           </button>
 
         </form>
