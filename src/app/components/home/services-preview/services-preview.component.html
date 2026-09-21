@@ -1,0 +1,21 @@
+<section class="section services">
+  <div class="container">
+    <div class="heading">
+      <div><span class="eyebrow">What we offer</span><h2 class="section-title">Digital services<br>for real businesses.</h2></div>
+      <p class="section-copy">From the first idea to the final launch, JANDIGITAL combines creativity, strategy and technology to create digital work that moves businesses forward.</p>
+    </div>
+    <div class="cards">
+      @for (service of services; track service.n) {
+        <article class="card">
+          <div class="image"><img [src]="'assets/images/' + service.img" [alt]="service.title"></div>
+          <span class="number">{{service.n}}</span>
+          <div class="body">
+            <h3>{{service.title}}</h3>
+            <p>{{service.text}}</p>
+            <a routerLink="/services">Learn More <span>→</span></a>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

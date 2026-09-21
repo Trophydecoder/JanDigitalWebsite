@@ -1,0 +1,22 @@
+<header class="nav">
+  <div class="nav-inner container">
+    <a routerLink="/" class="brand" (click)="close()" aria-label="JANDIGITAL home">
+      <img src="assets/images/jandigital-logo.png" alt="JANDIGITAL" id="logo">
+    </a>
+
+    <button class="menu" (click)="open = !open" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav [class.open]="open">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="close()">Home</a>
+      <a routerLink="/about" routerLinkActive="active" (click)="close()">About</a>
+      <a routerLink="/services" routerLinkActive="active" (click)="close()">Services</a>
+      <a routerLink="/clients" routerLinkActive="active" (click)="close()">Clients</a>
+      <a routerLink="/how-we-work" routerLinkActive="active" (click)="close()">How We Work</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="close()">Contact</a>
+    </nav>
+
+    <a routerLink="/contact" class="nav-cta">Start a Project <span>→</span></a>
+  </div>
+</header>

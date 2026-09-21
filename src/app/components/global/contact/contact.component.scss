@@ -1,0 +1,111 @@
+.contact-cta {
+    padding: 82px 0;
+    position: relative;
+    overflow: hidden;
+  
+    background:
+      linear-gradient(
+        90deg,
+        rgba(3, 6, 9, 0.97) 0%,
+        rgba(3, 8, 16, 0.91) 38%,
+        rgba(6, 16, 29, 0.62) 70%,
+        rgba(6, 16, 29, 0.55) 100%
+      ),
+      url('/assets/images/contactbg.png') center center / cover no-repeat;
+  
+    border-top: 1px solid var(--line);
+  }
+  
+  .inner {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  h2 {
+    font-family: 'Space Grotesk';
+    font-size: clamp(30px, 4vw, 48px);
+    margin: 14px 0 10px;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+  
+  p {
+    color: var(--muted);
+    max-width: 560px;
+    margin: 0;
+    line-height: 1.7;
+  }
+  .cta-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  
+  .btn-whatsapp {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-whatsapp:hover {
+    border-color: #25d366;
+    color: #25d366;
+    transform: translateY(-2px);
+  }
+  
+  .contact-details {
+    margin-top: 22px;
+  }
+  
+  .whatsapp-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #25d366;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .whatsapp-number:hover {
+    color: #5ee88b;
+  }
+  
+  .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #25d366;
+    border-radius: 50%;
+    font-size: 9px;
+  }
+  
+  @media (max-width: 760px) {
+    .inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cta-actions {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .contact-cta {
+      padding: 70px 0;
+      background-position: 65% center;
+    }
+  
+    .inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

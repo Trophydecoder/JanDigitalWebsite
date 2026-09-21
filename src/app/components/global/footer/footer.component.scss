@@ -1,0 +1,163 @@
+.footer {
+    position: relative;
+    background: #030609;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 70px 0 25px;
+    overflow: hidden;
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: -200px;
+    bottom: -180px;
+  
+    background: radial-gradient(
+      circle,
+      rgba(18, 104, 255, 0.12),
+      transparent 70%
+    );
+  
+    pointer-events: none;
+  }
+  
+  .footer-grid {
+    position: relative;
+    z-index: 2;
+  
+    display: grid;
+    grid-template-columns: 1.3fr 1fr .8fr;
+    gap: 70px;
+    align-items: start;
+  }
+  
+  .footer-logo {
+    width: 125px;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: #697789;
+    font-size: 13px;
+    letter-spacing: .04em;
+  }
+  
+  
+  /* NAVIGATION */
+  
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 14px 35px;
+  }
+  
+  .links a {
+    position: relative;
+  
+    color: #aab4c1;
+    text-decoration: none;
+  
+    font-size: 13px;
+    transition: color .25s ease;
+  }
+  
+  .links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  
+    width: 0;
+    height: 1px;
+  
+    background: #1268ff;
+  
+    transition: width .25s ease;
+  }
+  
+  .links a:hover {
+    color: #fff;
+  }
+  
+  .links a:hover::before {
+    width: 100%;
+  }
+  
+  
+  /* RIGHT SIDE */
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .social span {
+    color: #697789;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+  }
+  
+  .social a {
+    width: fit-content;
+  
+    color: #25d366;
+    text-decoration: none;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    transition: .25s ease;
+  }
+  
+  .social a:hover {
+    color: #5ee88b;
+    transform: translateX(3px);
+  }
+  
+  
+  /* COPYRIGHT */
+  
+  .copyright {
+    position: relative;
+    z-index: 2;
+  
+    margin-top: 65px;
+    padding-top: 22px;
+  
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  
+    color: #4d5967;
+    font-size: 11px;
+    letter-spacing: .04em;
+  }
+  
+  
+  /* MOBILE */
+  
+  @media (max-width: 800px) {
+  
+    .footer {
+      padding: 55px 0 22px;
+    }
+  
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    .copyright {
+      margin-top: 45px;
+    }
+  }
